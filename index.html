@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Aplicações front-end modernas</title>
+    <title>Criando formulários dinâmicos com Elasticsearch</title>
 
     <meta name="description" content="O que são e como criar aplicações front-end modernas">
     <meta name="author" content="João Vitor Cavalcante">
@@ -38,11 +38,11 @@
         color: #FFFF00;
       }
 
-      
+
       .display-flex {
         display: flex;
       }
-  
+
       .align-center {
         justify-content: center;
       }
@@ -66,13 +66,13 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1 style="font-size: 3em">Aplicações front-end modernas</h1>
+          <h1 style="font-size: 2.5em">Criando formulários dinâmicos com Elasticsearch</h1>
           <div class="display-flex align-center">
-            <img src="images/eu.jpg" alt="Eu">
+            <img src="images/eu.jpeg" alt="Eu">
             <div style="margin-left: 20px">
               <h3>João Cavalcante</h3>
               <p><a href="http://twitter.com/kavalcantej">@kavalcantej</a></p>
-              <p><a href="http://kavalcante.com">www.kavalcante.com</a></p>
+              <p><a href="http://kavalcante.com">kavalcante.github.io</a></p>
               <p><a href="https://cotabox.com.br" target="_blank"><img src="images/logo-horizontal.png" style="border: 0; background: none;" alt="Logo Cotabox"></a></p>
             </div>
           </div>
@@ -80,315 +80,512 @@
 
         <section>
           <section>
-            <h1>1990 - 2000 (Web 1.0)</h1>
-          </section>
-          <section>
-            <h3>Sites simples</h3>
-            <div class="display-flex">
-              <div class="fragment">
-                <img src="images/amazon.jpg" alt="Amazon">
-                <p>Amazon (1994)</p>
-              </div>
-              <div class="fragment">
-                <img src="images/google.jpg" alt="Google">
-                <p>Google (1998)</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="display-flex">
-              <div class="fragment">
-                <img src="images/apple.jpg" alt="Apple">
-                <p>Apple (1994)</p>
-              </div>
-              <div class="fragment">
-                <img src="images/yahoo.jpg" alt="Yahoo">
-                <p>Yahoo (1996)</p>
-              </div>
-            </div>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h1>2000 - 2010 (Web 2.0)</h1>
-          </section>
-          <section>
-            <h2>Uma melhoria considerável</h2>
-            <div class="display-flex">
-              <div class="fragment">
-                <img src="images/uol.jpg" alt="Uol">
-                <p>Uol (2009)</p>
-              </div>
-              <div class="fragment">
-                <img src="images/jovemnerd.jpg" alt="Jovem Nerd">
-                <p>Jovem Nerd (2008)</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h2>Primeiras divisões</h2>
-            <ul>
-              <li class="fragment">       
-                Web Designer (responsável por desenhar telas em Photoshop/Fireworks e passar para o HTML/CSS)
-              </li>
-              <li class="fragment">
-                Programador (responsável por pegar o HTML e CSS e passar para linguagens de programação, como PHP, Java, ASP, além de cuidar de banco de dados).
-              </li>
-              <li class="fragment">
-                Sysadmin (responsável por infra)
-              </li>
-              <li class="fragment">
-                Webmaster (Era a pessoa que fazia tudo, desenhava, programava e subia o site).
-              </li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h1>Precisavamos de PODER!</h1>
-          </section>
-          <section>
-            <h2>Novas ferramentas</h2>
-            <ul>
-              <li class="fragment">JSON (formatação de dados alternativa ao XML).</li>
-              <li class="fragment">jQuery (primeira biblioteca Javascript a se tornar absurdamente popular, com o objetivo de tornar a tela muito mais rica em interação).</li>
-              <li class="fragment">Ajax (metodologia de desenvolvimento assíncrono utilizando Javascript e XML/JSON para tornar telas muito mais interativas).</li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h1>2010 - hoje (Web 2.5?)</h1>
-          </section>
-          <section>
-            <h2>Primeiros frameworks SPA's</h2>
-            <div class="display-flex align-center">
-              <div class="fragment">
-                <img src="images/angularjs.png" alt="Angularjs" style="height: 100px; padding: 0 10px">
-                <p>Angular.js</p>
-                <small>(Google - 2009)</small>
-              </div>
-              <div class="fragment">
-                <img src="images/backbonejs.jpeg" alt="Backbonejs" style="height: 100px; padding: 0 10px">
-                <p>Backbone.js</p>
-                <small>(Jeremy Ashkenas - 2010)</small>
-              </div>
-            </div>
-            <div class="display-flex align-center">
-              <div class="fragment">
-                <img src="images/ember.png" alt="Emberjs" style="height: 100px; padding: 0 10px">
-                <p>Ember.js (2011)</p>
-                <small>(Yehuda Katz - 2011)</small>
-              </div>
-              <div class="fragment">
-                <img src="images/knockout.jpg" alt="knockout" style="height: 100px; padding: 0 10px">
-                <p>Knockout.js</p>
-                <small>(Steve Sanderson - Microsoft - 2010)</small>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h1>Um "único" objetivo</h1>
-            <h2 class="fragment">criar aplicações visíveis ao público (front-end) ricas em interação</h2>
-          </section>
-          <section>
-            <h2>Time de Desenvolvimento - Designers</h2>
-            <ul>
-              <li class="fragment">
-                UX Designer: Profissional responsável por fazer estudos, pesquisas e protótipos afim de definir a melhor arquitetura de informação para posicionar elementos em uma tela.
-              </li>
-              <li class="fragment">
-                UI Designer: Após a definição de usabilidade, é ele quem vai fazer esses desenhos e protótipos em algo mais próximo da realidade, utilizando cores, sombreamento e enfim desenhando telas para serem reproduzidas por front-end developers. (É uma evolução do Designer Gráfico).
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2>Time de Desenvolvimento - Front-end</h2>
-            <ul>
-              <li class="fragment">
-                Front-end: profissional responsável pela parte frontal da aplicação, que é visível ao público ou usuário e tem como principal responsabilidade, tornar essa parte cada vez mais leve, fluída e seguindo padrões de usabilidade. É hoje, um programador como o back-end, pois existe hoje muita manipulação de dado e é preciso conhecimentos como estruturas de dados e técnicas padrões da Computação).
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2>Time de Desenvolvimento</h2>
-            <ul>
-              <li class="fragment">
-                Back-end: Profissional que tem como responsabilidade desenvolver regras de negócio e a comunicação com banco de dados e outros serviços de back-end. 
-              </li>
-              <li class="fragment">
-                Devops: Uma evolução do que é o Sysadmin
-              </li>
-              <li class="fragment">
-                Fullstack: Uma evolução do que era o Webmaster
-              </li>
-            </ul>
-          </section>
-        </section>
+            <h2>Muitas tecnologias novas...</h2>
 
-        <section>
-          <section>
-            <h1>Single Page Applications</h1>
-          </section>
-          <section>
-            <h2>Objetivos?</h2>
-            <ul>
-              <li class="fragment">Tornar as aplicações mais interativas e dinâmicas</li>
-              <li class="fragment">Dar mais responsabilidade ao profissional, para que ele pudesse cuidar de outros aspectos que antes não possuíam tanta relevância, porém agora, é uma parte fundamental do conjunto de aplicações e sistemas web.</li>
-            </ul>
-          </section>
-          <section>
-            <h1>O que é?</h1>
-            <p class="fragment">Aplicações que através de uma única página (index.html), renderizam todo seu conteúdo através do Javascript, buscando conteúdo em uma API geralmente.</p>
-          </section>
-          <section>
             <div class="fragment">
-              <img src="images/bbc.gif" alt="BBC">
-              <small style="display: block">BBC (Portal padrão)</small>
+              <img src="images/js-10-years.jpeg" alt="JS 10 years challenge">
+              <p>JS 10 years challenge</p>
             </div>
+          </section>
+          <section>
+            <h1>How-to-do</h1>
+          </section>
+          <section>
+            <h1>Why-to-do</h1>
+          </section>
+          <section>
+            <h1>How-and-why-to-do</h1>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>O problema</h1>
+          </section>
+          <section>
+            <img src="images/logo-horizontal.png" style="border: 0; background: none;" alt="Logo Cotabox" width="300">
+            <p>
+              Sistema de gestão de compras para empresas
+            </p>
+          </section>
+          <section>
+            <h3>Ciclo de vida de compras</h3>
+            <img src="images/procurement.cycle_.psf_.800.jpg" alt="procurement-life-cycle" width="500">
+          </section>
+          <section>
+            <h3>Ciclo de vida de compras</h3>
+            <img src="images/treta.jpg" alt="Treta no ciclo de compra" width="500">
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## O abençoado envia p/ fornecedor:
+
+              ```txt
+                Nome do item: Notebook
+                Descrição: ~ Não fornecida ~
+                Quantidade: 2 UN
+              ```
+            </script>
+          </section>
+          <section>
+            <h2>Fornecedor:</h2>
+            <img src="images/panda-puto.gif" alt="Panda putao" width="500">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Solução</h1>
+            <p class="fragment">
+              E se a gente de alguma maneira conseguisse entender o que ele quer comprar e
+              solicitar mais informações?
+            </p>
+            <p class="fragment">Beleza, mas como?</p>
+          </section>
+          <section>
+            <h2>1º - Descobrir o que ele está buscando</h2>
+            <img src="images/search.gif" alt="Crazy searchs">
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## 2º - Exibir mais campos para preenchimento
+
+              ```txt
+                Nome do item: Notebook
+                Descrição: ~ Não fornecida ~
+                Quantidade: 2 UN
+                Marca*:
+                Memória:
+                Armazenamento:
+                Tamanho da tela:
+              ```
+            </script>
+          </section>
+          <section>
+            <h2>
+              #PARTIU
+            </h2>
+            <img src="images/kekel.gif" alt="#PARTIU">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>1º - Descobrir o que ele está buscando</h1>
+          </section>
+          <section>
+            <h2 class="fragment">Léozao já tinha ouvido falar do Solr</h2>
+            <img class="fragment" src="images/turbo.jpg" alt="Turbo" width="450">
             <div class="fragment">
-              <img src="images/linkedin.gif" style="margin-left: 10px" alt="LinkedIn">
-              <small style="display: block">LinkedIn (SPA)</small>
+              <small>
+                *A importância da bagagem e do network
+              </small>
             </div>
           </section>
           <section>
-            <h2>Agora devo <span class="yellow">sempre</span> usar SPA's?</h2>
-            <h3 class="fragment">Claro que <span class="yellow">não</span>!</h3>
+            <p>
+              O problema do Solr é que não existia serviço auto-gerenciado na AWS.
+              E existia um outro nome que estava mais forte e que possua esse serviço.
+            </p>
           </section>
           <section>
-            <h2>Quando utilizar Single Page Applications?</h2>
+            <h3>Foi ai que conhecemos o</h3>
+            <h1>Elasticsearch</h1>
           </section>
           <section>
-            <h3>Perguntas que devemos nos fazer!</h3>
-            <ul>
-              <li class="fragment">Qual o tamanho do meu time?</li>
-              <li class="fragment">Qual o problema que eu quero resolver?</li>
-              <li class="fragment">Quem é meu público?</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Use SPA's se:</h3>
-            <ul>
-              <li class="fragment">Desenvolver dashboards e sistemas internos (protegidos com senha e afins) com uma equipe maior que 1 pessoa.</li>
-              <li class="fragment">Desenvolver aplicações mais ricas e intuitivas, além de mais fluídas.</li>
-              <li class="fragment">Quer separar responsabilidade dos desenvolvedores e focar para alcançar resultados mais avançados</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Use SPA's se:</h3>
-            <ul>
-              <li class="fragment">Quer desenvolver ecommerce, sites onde a indexação (SEO) é importante, porém possui uma equipe experiente. Pois assim é possível ganhar os benefícios das SPA’s, sem perder rankeamento e visibilidade no Google e afins.</li>
-            </ul>            
-          </section>
-          <section>
-            <h1>Como?</h1>
-          </section>
-          <section>
-            <h3>Principais Nomes</h3>
-            <ul>
-              <li class="fragment">React (Facebook)</li>
-              <li class="fragment">Vue.js</li>
-              <li class="fragment">Angular (Google, evolução do antigo Angularjs)</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Quem usa?</h2>
-          </section>
-          <section>
-            <ul>
-              <li class="fragment">Netflix (React)</li>
-              <li class="fragment">Airbnb (React)</li>
-              <li class="fragment">Twitter Mobile (React)</li>
-              <li class="fragment">Linkedin (Ember)</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Parece que é, mas não é!</h2>
-          </section>
-          <section>
-            <ul>
-              <li class="fragment">Facebook (React)</li>
-              <li class="fragment">Youtube (SPFJS)</li>
-              <li class="fragment">Alibaba (Vue.js)</li>
-              <li class="fragment">Cotabox (Vue.js :p)</li>
-            </ul>
-          </section>
-          <section>
-            <h1>Fragmentos?</h1>
-          </section>
-          <section>
-            <h1><span class="yellow">SEO</span></h1>
-          </section>
-          <section>
-            <h3>Exemplo: Youtube</h3>
-            <img class="fragment" src="images/youtube.gif" alt="Youtube">
-          </section>
-          <section>
-            <h3>Exemplo de renderização no servidor</h3>
-            <img class="fragment" src="images/prova-renderizacao-servidor.png" alt="Youtube">
+            <p>
+              O Elasticsearch é um indexador de documentos JSON para buscas em texto. Basicamente, é possível colocar qualquer tipo de documento JSON e ao realizar buscas, o Elasticsearch te devolve com o documento que tiver a maior pontuação, com base no algoritmo dele.
+            </p>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>Server-side rendered</h1>
+            <h1>
+              2º - Exibir mais campos para preenchimento
+            </h1>
           </section>
           <section>
-            <h2>Frameworks dos frameworks :P</h2>
-            <ul>
-              <li class="fragment">
-                Next.js (Feito em cima do React, com o objetivo de criar aplicações server side rendered)
-              </li>
-              <li class="fragment">
-                Nuxt.js (Cópia barata porém incrível em cima do Vue.js xD, que é o que utilizamos na Cotabox)
-              </li>
-            </ul>
+            <p>
+              Se a gente tivesse um JSON padrão, que descreve os campos, opções, valores padrões,
+              validações e etc... Seria possível montar na tela.
+            </p>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Chegamos na seguinte estrutura
+
+              ```json
+                {
+                  "name":"Notebook",
+                  "category":"Equipamentos de Informática, Computadores, Eletrônicos",
+                  "hasProduction":false,
+                  "type":"PRODUCT",
+                  "fields":[
+                    {
+                        "value":"",
+                        "label":"Marca",
+                        "type":"text",
+                        "placeholder":"Ex: Dell",
+                        "options":[
+
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Modelo",
+                        "type":"text",
+                        "placeholder":"",
+                        "options":[
+
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Processador",
+                        "type":"text",
+                        "placeholder":"Ex: I7",
+                        "options":[
+
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Memória RAM",
+                        "type":"select",
+                        "placeholder":"",
+                        "options":[
+                          {
+                              "label":"Até 1 GB",
+                              "value":"Até 1 GB"
+                          },
+                          {
+                              "value":"2 GB",
+                              "label":"2 GB"
+                          },
+                          {
+                              "value":"4GB",
+                              "label":"4 GB"
+                          },
+                          {
+                              "value":"6 GB",
+                              "label":"6 GB"
+                          },
+                          {
+                              "value":"8 GB",
+                              "label":"8 GB"
+                          },
+                          {
+                              "value":"12 GB",
+                              "label":"12 GB"
+                          },
+                          {
+                              "value":"16 GB",
+                              "label":"16 GB"
+                          },
+                          {
+                              "value":"32 ou mais",
+                              "label":"32 GB ou mais"
+                          }
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Capacidade (HD e/ou SSD)",
+                        "type":"text",
+                        "placeholder":"Ex: HD 500 GB",
+                        "options":[
+
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Faixa de Preço",
+                        "type":"select",
+                        "placeholder":"",
+                        "options":[
+                          {
+                              "label":"Até R$ 1.000",
+                              "value":"Até R$ 1.000"
+                          },
+                          {
+                              "value":"De R$ 1.000 a R$ 2.000",
+                              "label":"De R$ 1.000 a R$ 2.000"
+                          },
+                          {
+                              "value":"De R$ 2.000 a R$ 4.000",
+                              "label":"De R$ 2.000 a R$ 4.000"
+                          },
+                          {
+                              "value":"De R$ 4.000 a R$ 6.000",
+                              "label":"De R$ 4.000 a R$ 6.000"
+                          },
+                          {
+                              "value":"De R$ 6.000 a R$ 8.000",
+                              "label":"De R$ 6.000 a R$ 8.000"
+                          },
+                          {
+                              "value":"De R$ 8.000 a R$ 10.000",
+                              "label":"De R$ 8.000 a R$ 10.000"
+                          },
+                          {
+                              "value":"Acima de R$ 10.000",
+                              "label":"Acima de R$ 10.000"
+                          }
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Tamanho da Tela",
+                        "type":"select",
+                        "placeholder":"",
+                        "options":[
+                          {
+                              "label":"Até 13º",
+                              "value":"Até 13\""
+                          },
+                          {
+                              "value":"14\"",
+                              "label":"14\""
+                          },
+                          {
+                              "value":"15\"",
+                              "label":"15\""
+                          },
+                          {
+                              "value":"15.6\"",
+                              "label":"15.6\""
+                          },
+                          {
+                              "value":"Acima de 16\"",
+                              "label":"Acima de 16\""
+                          }
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    },
+                    {
+                        "value":"",
+                        "label":"Placa de Vídeo",
+                        "type":"text",
+                        "placeholder":"",
+                        "options":[
+
+                        ],
+                        "rules":[
+
+                        ],
+                        "xs":24,
+                        "sm":24,
+                        "md":12,
+                        "lg":12
+                    }
+                  ]
+              }
+              ```
+            </script>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>Resumão</h1>
+            <h1>HORA DO SHOW</h1>
+            <img src="images/doit.gif" alt="Just do it">
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Configuração do Elasticsearch
+
+              ```json
+              {
+                "settings": {
+                  "index": {
+                    "number_of_shards": 1,
+                    "number_of_replicas": 0
+                  },
+                  "analysis" : {
+                    "filter": {
+                      "filtro_autocomplete": {
+                        "type": "edge_ngram",
+                        "min_gram": 2,
+                        "max_gram": 20
+                      },
+                      "brazilian_stop": {
+                        "type":       "stop",
+                        "stopwords":  "_brazilian_"
+                      },
+                      "brazilian_stemmer": {
+                        "type":       "stemmer",
+                        "language":   "brazilian"
+                      }
+                    },
+                    "analyzer": {
+                      "autocomplete" : {
+                        "type": "custom",
+                        "tokenizer": "standard",
+                        "filter" : [
+                          "lowercase",
+                          "filtro_autocomplete",
+                          "brazilian_stop",
+                          "brazilian_stemmer"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "mappings": {
+                  "items": {
+                    "_all": {
+                      "type": "text",
+                      "analyzer": "brazilian"
+                    },
+                    "properties": {
+                      "name": {
+                        "fields": {
+                          "original": {
+                            "type": "keyword"
+                          },
+                          "autocomplete": {
+                            "type": "text",
+                            "analyzer": "autocomplete"
+                          }
+                        },
+                        "type": "text"
+                      },
+                      "category": {
+                        "type": "text"
+                      },
+
+                      "fields": {
+                        "type": "object"
+                      },
+
+                      "type": {
+                        "type": "keyword"
+                      },
+
+                      "hasProduction": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              }
+              ```
+            </script>
           </section>
           <section>
-            <h2>SPA's são baseadas em:</h2>
-            <ul>
-              <li class="fragment">
-                Restful API’s (ou GraphQL API’s, tema da palestra do Leozão)
-              </li>
-              <li class="fragment">
-                JSON
-              </li>
-              <li class="fragment">
-                Chamadas Ajax
-              </li>
-              <li class="fragment">
-                E principalmente, frameworks e bibliotecas Javascript, como o React, Vue.js e Angular
-              </li>
-            </ul>
+            <h1>Explicando cada filtro</h1>
+          </section>
+          <section>
+            <h3>Customizado do tipo EDGE_NGRAM</h3>
+            <p>
+              O tipo <strong>edge_ngram</strong> quebra as palavras em várias partes,
+              de forma a associar essas palavra ao texto principal.
+            </p>
+            <p class="fragment">
+              Em nossa configuração ele irá pegar palavras que tem mais de 2 letras
+              e quebrar até 20 letras.
+            </p>
+            <p class="fragment">
+              Exemplo: Notebook -> No, Not, Note, Noteb, Notebo, Noteboo, Notebook.
+            </p>
+            <p class="fragment">
+              Dessa forma, eu consigo criar um autocomplete que é mais
+              tolerante a erro.
+            </p>
+          </section>
+          <section>
+            <h3>brazilian_stemmer</h3>
+            <p>
+              O tipo <strong>stemmer</strong> transforma as palavras em suas versões
+              mais simples.
+            </p>
+            <p class="fragment">
+              Dessa forma, palavras que estão conjulgadas ou estão no plural ainda fazem
+              referência para a mesma palavra originária.
+            </p>
+            <p class="fragment">
+              Exemplo: The boy's cars are different colors ⇒ the boy car be differ color
+            </p>
           </section>
         </section>
 
         <section>
-          <h1>Referências</h1>
-          <ul>
-            <li><a href="https://medium.com/trainingcenter/descomplicando-spas-caa8f57bdbf3" target="_blank">Descomplicando SPA’s</a></li>
-            <li><a href="https://hipsters.tech/single-page-applications-hipsters-16/" target="_blank">Single Page Applications — Hipsters #16</a></li>
-            <li><a href="https://devnaestrada.com.br/2016/09/23/angular-vs-react.html" target="_blank">DNE — AngularJS vs ReactJS feat CodeSchool</a></li>
-            <li><a href="https://www.youtube.com/playlist?playnext=1&list=PLy5T05I_eQYOr3uPSI-eTVCLe1GF1qOf5&index=1" target="_blank">Curso de Vue na Codecasts (gratuito)</a></li>
-            <li><a href="https://www.casadocodigo.com.br/products/livro-vue" target="_blank">Livro de Vue da Casa do Código</a></li>
-          </ul>
+          <section>
+            <h1>Resultado</h1>
+          </section>
+          <section>
+            <h2>Ao buscar um produto:</h2>
+            <img src="images/searching.png" alt="Buscando itens no Cotabox">
+          </section>
+          <section>
+            <h2>Ao encontrar um item:</h2>
+            <img src="images/fields.png" alt="Campos personalizados Cotabox">
+          </section>
         </section>
 
-        <section data-background="https://media.giphy.com/media/6tHy8UAbv3zgs/giphy.gif?response_id=5920ce55f4a480ca244f1527">
-          <h1>Valeu :)</h1>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+        <section>
+          <section>
+            <h1>Próximos passos</h1>
+          </section>
+          <section>
+            <h2>Converter dados desestruturados:</h2>
+            <img src="images/before.png" alt="Antes">
+          </section>
+          <section>
+            <h2>Em dados estruturados:</h2>
+            <img src="images/after.png" alt="Depois">
+          </section>
+        </section>
+
+        <section>
+          <h2>Valeu :)</h2>
+          <img src="images/brazilian-dancing.gif" alt="Brazilian Dancing" width="400">
         </section>
 
       </div>
